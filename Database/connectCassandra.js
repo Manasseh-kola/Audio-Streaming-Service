@@ -3,9 +3,9 @@ const cassandra = require("cassandra-driver");
 
 //Connect to Cassandra database
 const client = new cassandra.Client({
-  contactPoints: ["127.0.0.1"],
+  contactPoints: [process.env.CASS_CONTACT],
   localDataCenter: "datacenter1",
-  protocolOptions: { port: 9042 },
+  protocolOptions: { port: proceess.env.CASS_PORT },
   keyspace: "headphones",
 });
 
