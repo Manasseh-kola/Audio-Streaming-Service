@@ -1,0 +1,34 @@
+{
+  "name": "reshuffle",
+  "version": "1.0.0",
+  "description": "Music Library",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "author": "Manasseh",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1105.0",
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "cassandra-driver": "^4.6.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-cassandra": "^2.8.0",
+    "http-status-codes": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.1",
+    "multer": "^1.4.4",
+    "mysql": "github:mysqljs/mysql",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.7.3",
+    "sequelize": "^6.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

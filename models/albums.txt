@@ -1,0 +1,11 @@
+--Cassandra Data model for Albums
+CREATE TABLE IF NOT EXISTS soundAlbums (
+    album_name text,
+    author_name text,
+    genre text,
+    rating bigint,
+    downloads bigint,
+    created_at timestamp,
+    audio_Id: text,
+    PRIMARY KEY ((author_name,album_name), created_at)
+) WITH CLUSTERING ORDER BY (created_at DESC)
